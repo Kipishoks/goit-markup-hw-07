@@ -1,0 +1,81 @@
+@media screen and (min-width: 1200px) {
+    .container {
+max-width: 1158px;
+    }
+.section {
+    padding-bottom: 120px;
+    padding-top: 120px;
+}
+.subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+    .slogan {
+    max-width: 496px;
+    margin: 0 auto 72px auto;
+    }
+.hero {
+    padding: 188px 0;
+}
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    gap: 40px;
+    margin-left: auto;
+}
+.head-container {
+
+}
+.nav-list {
+    margin-left: 76px;
+}
+.feature-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;}
+    
+.feature-text {
+    font-weight: 400;}
+
+.feature-list {
+    flex-wrap: nowrap;
+    gap: 24px;
+}
+.feature-item {
+    flex-basis: calc((100% - 72px) / 4) ;
+}
+.team-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 23px;
+}
+.customers-list {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+.customers-item {
+    flex-basis: calc((100% - 120px) / 6);
+}
+
+/*  ------------------------------------*/
+}
+@media (min-width: 1200px) and (min-device-pixel-ratio: 1),
+(min-width: 1200px) and (min-resolution: 96dpi),
+(min-width: 1200px) and (min-resolution: 1dppx) {
+    .hero-background {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../image/herotitle.jpg);
+        max-width: 1440px;
+    }
+}
+@media (min-width: 1200px) and (min-device-pixel-ratio: 2),
+(min-width: 1200px) and (min-resolution: 192dpi),
+(min-width: 1200px) and (min-resolution: 2dppx) {
+    .hero-background {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../image/people-office@2x.jpg);
+    max-width: 1440px;
+    }
+}

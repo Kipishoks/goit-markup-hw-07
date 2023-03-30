@@ -1,0 +1,51 @@
+@media screen and (min-width: 480px) {
+    .container {
+max-width: 426px;
+    }
+
+}
+@media screen and (max-width: 479px) {
+    .container {
+min-width: 320px;}
+.slogan {
+        max-width: 320px;
+    }
+    }
+
+@media screen and (max-width: 768px) {
+    .container {
+        min-width: 320px;
+    }
+
+    .contact {
+        display: none;
+    }
+
+    .nav-list {
+        display: none;
+    }
+    .btn-mobile-menu {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+ 
+    .feature-subtitle {
+        text-align: center;
+    }
+.customers-list {
+    display: flex;
+    gap: 72px 16px;
+    flex-wrap: wrap;
+}
+.customers-item {
+    flex-basis: calc((100% - 16px) / 2);
+    }
+}
+@media (max-width: 767px) and (min-device-pixel-ratio: 2),
+(max-width: 767px) and (min-resolution: 192dpi),
+(max-width: 767px) and (min-resolution: 2dppx) {
+    .hero-background {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../image/Dark-bg-mobike@2x.jpg); 
+         ;
+    }
+}

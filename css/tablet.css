@@ -1,0 +1,118 @@
+@media screen   and (min-width: 768px) {
+    .container {
+max-width: 766px;
+    }
+
+.btn-mobile-menu {
+    display: none;
+}
+.head-container {
+    border-bottom: 1px solid var(--accent);
+}
+.nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.nav-link {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--dark);
+    transition: color var(--duration-time-function);
+}
+
+.nav-item .current {
+    position: relative;
+    color: var(--primary-brand)
+}
+.nav-item .current::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--pressed-state);
+    border-radius: 2px;
+    display: block;
+}
+.contact {
+    display: inline-block;
+}
+
+.contact-link {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: inherit;
+    transition: color var(--duration-time-function);
+}
+.nav-link:hover,
+.nav-link:focus,
+.contact-link:hover,
+.contact-link:focus {
+    color: var(--primary-brand);
+}
+ .slogan {
+    font-size: 56px;
+    line-height: 1.07;
+    margin: 0 auto 40px auto;
+ }
+ .feature-list {
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: row;
+     gap: 72px 24px;
+     color: var(--dark);
+ }
+ .feature-item {
+     flex-basis: calc((100% - 24px) / 2) ;
+ }
+.team-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 64px 24px;
+    justify-content: center;
+}
+.customers-list {
+    display: flex;
+    gap: 72px 24px;
+    flex-wrap: wrap;
+}
+.customers-item {
+    flex-basis: calc((100% - 48px) / 3);
+}
+
+}
+
+
+
+@media (min-width: 768px) and (min-device-pixel-ratio: 1),
+(min-width: 768px) and  (min-resolution: 96dpi),
+(min-width: 768px) and  (min-resolution: 1dppx) {
+    .hero-background {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../image/Dark-bg-table.jpg)
+
+    }
+}
+
+@media (min-width: 768px) and (min-device-pixel-ratio: 2),
+(min-width: 768px) and (min-resolution: 192dpi),
+(min-width: 768px) and (min-resolution: 2dppx) {
+    .hero-background {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../image/Dark-bg-table@2x.jpg);
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+.icon-card {
+        display: none;
+    }
+.works {
+    display: none;
+}
+}
+    
