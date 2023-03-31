@@ -96,7 +96,7 @@ a {text-decoration: none;
     
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.1;
+    line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
 }
@@ -173,11 +173,9 @@ a {text-decoration: none;
     color: var(--dark);
 }
 
-
-.contact-list {
-  
-   }
-    
+  .current {
+    color: var(--primary-brand)
+  }
 
    /* -----------------------Section Hero------------------- */
    .hero-background {
@@ -192,7 +190,6 @@ a {text-decoration: none;
     background-size: cover;
       }
    .section.hero {
-    
     padding: 112px 0;
    }
 
@@ -226,9 +223,7 @@ a {text-decoration: none;
       }
 
 /* -------------------------------------features------------------------------ */
-.section.features {
-    padding-bottom: 0;
-}
+
 
 .feature-list {
     display: flex;
@@ -239,19 +234,13 @@ a {text-decoration: none;
 }
 
  .icon-card{
-    text-align: center;
-    background: var(--light);
-    border-radius: 4px;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    min-width: 264px;
+   display: none;
  }
 
-.icon {
- 
-}
-
 .feature-subtitle {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
     color: var(--dark);
     margin-bottom: 8px;
 }
@@ -262,7 +251,9 @@ a {text-decoration: none;
 }
 
 /* -----------------------------What are we doing ----------------------------*/
-  .works {}
+  .works {
+    display: none;
+  }
 
   .works-list {
     display: flex;
@@ -336,16 +327,9 @@ a {text-decoration: none;
 
 }
 
-.icon-contact{
-
-}
-
 /*-------------------------Customers--------------------------------*/
-.customers {}
-
-
-
-
+.customers-item {
+    flex-basis: calc((100% - 16px) / 2);}
 
 .customers-link {
     display: flex;
@@ -380,34 +364,22 @@ a {text-decoration: none;
 
 /* ------------------------Footer ----------------------------------*/
 .footer {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 96px;
+    padding-bottom: 96px;
     background-color: var(--dark);
 }
+
 .footer-container {
     display: flex;
 }
-
-.footer-information {
-    margin-right: 120px;
-}
-
-.footer-link {
-
-}
-
 .footer-logo {
     color: var(--light);
 }
 
 .footer-text {
-    max-width: 264px;
     color: var(--accent);
     margin-top: 16px;
-}
-
-.social-media {
-   margin-right: 80px;
+    max-width: 268px;
 }
 
 .subtitle-media {
@@ -452,7 +424,6 @@ a {text-decoration: none;
     border-radius: 4px;
     outline: transparent;
     height: 40px;
-    width: 264px;
     padding: 0 0 0 16px;
     color: var(--color-btn);
     transition: border-color var(--duration-time-function);
@@ -466,6 +437,10 @@ a {text-decoration: none;
     font-size: 12px;
     line-height: calc(24 / 12);
   
+}
+.form-labal {
+    text-align: center;
+    
 }
 
 .form-title {
@@ -483,16 +458,18 @@ a {text-decoration: none;
     padding-bottom: 8px;
     position: relative;
     transition: background-color var(--duration-time-function);
+    margin: 0 auto;
 }
 .form-button:focus, .form-button:hover {
     background-color: var(--pressed-state);
 }
 
 .form-foot {
-    margin-top: 16px;
     display: flex;
+    flex-direction: column;
     gap: 24px;
     font-size: 12px;
+    margin-top: 16px;
 }
 .form-icon-send {
     position: absolute;
@@ -509,8 +486,6 @@ a {text-decoration: none;
     justify-content: center;
     margin-bottom: 72px;
 }
-
-.work-item {}
 
 .work-btn:focus, .work-btn:hover {
     background-color: var(--pressed-state);
@@ -548,22 +523,16 @@ a {text-decoration: none;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   }
 
-.cards-link {
-}
-
-.cards-description {
+ards-description {
     padding: 32px 16px;
     border: 1px solid var(--accent);
      }
-.link {}
 
 .cards-subtitle {
     color: var(--dark);
     margin-bottom: 8px;
 }
 
-.cards-text {
-}
 .cards-link-overlay{
     position: relative;
     overflow: hidden;
@@ -624,12 +593,10 @@ a {text-decoration: none;
     transition: transform var(--duration-time-function) ;
 }
 
-
-
 .modal-close-btn {
     position: absolute;
-    top: 22px;
-    right: 33px;
+    top: 24px;
+    right: 24px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -702,7 +669,7 @@ a {text-decoration: none;
     flex-direction: column;
     gap: 8px;
     font-size: 12px;
-    margin-bottom: 16px;
+    margin-bottom: 18px;
 }
 
 .modal-textarea {

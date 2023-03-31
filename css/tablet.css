@@ -76,6 +76,7 @@ max-width: 766px;
     gap: 64px 24px;
     justify-content: center;
 }
+
 .customers-list {
     display: flex;
     gap: 72px 24px;
@@ -84,7 +85,14 @@ max-width: 766px;
 .customers-item {
     flex-basis: calc((100% - 48px) / 3);
 }
-
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+}
+.mobile-menu {
+    display: none;
+}
 }
 
 
@@ -96,6 +104,9 @@ max-width: 766px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../image/Dark-bg-table.jpg)
 
     }
+.form-foot {
+    flex-direction: row;
+}
 }
 
 @media (min-width: 768px) and (min-device-pixel-ratio: 2),
@@ -107,12 +118,27 @@ max-width: 766px;
     }
 }
 
-@media screen and (max-width: 1199px) {
-.icon-card {
+@media screen and (max-width: 1199px) and (min-width: 768px) {
+/* .icon-card {
         display: none;
-    }
-.works {
-    display: none;
+    } */
+
+.footer-information {
+    width: calc((100% - 24px) / 2);
 }
+.social-media {
+    width: calc((100% - 24px) / 2);
 }
-    
+.form-div {
+    flex-grow: 1;
+}
+
+.form-input {
+flex-basis: calc((100% - 24px) / 2)
+}
+.container-table{
+    padding-right: 108px;
+    padding-left: 108px;
+}
+
+}

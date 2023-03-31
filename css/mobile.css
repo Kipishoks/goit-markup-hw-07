@@ -1,6 +1,18 @@
+:root {
+    --dark: #2E2F42;
+    --primary-brand: #4D5AE5;
+    --pressed-state: #404BBF;
+    --success: #31D0AA;
+    --text: #434455;
+    --subtle-text: #8E8F99;
+    --accent: #E7E9FC;
+    --light: #F4F4FD;
+    --color-btn: #ffffff;
+    --duration-time-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 @media screen and (min-width: 480px) {
     .container {
-max-width: 426px;
+max-width: 428px;
     }
 
 }
@@ -10,9 +22,18 @@ min-width: 320px;}
 .slogan {
         max-width: 320px;
     }
+.mobile-contact-list320 {
+    font-size: 24px;
+}
+.customers-item {
+padding: 0;
+}
+.customers-link {
+    padding: 0;
+}
     }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .container {
         min-width: 320px;
     }
@@ -37,10 +58,89 @@ min-width: 320px;}
     gap: 72px 16px;
     flex-wrap: wrap;
 }
-.customers-item {
-    flex-basis: calc((100% - 16px) / 2);
+
+.footer-container {
+    flex-direction: column;
+    gap: 72px;
+    align-items: center;
     }
+.footer-link {
+    display: block;
+    text-align: center;
 }
+.social-media {
+   text-align: center;
+}
+.subtitle-footer {
+    display: block;
+}
+.form-div {
+    width: 100%;
+    }
+
+.mobile-menu {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    z-index: 100;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+    overflow-y: scroll;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 0 auto;
+    width: 100%;
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity var(--duration-time-function), visibility var(--duration-time-function);
+}
+
+.mobile-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.mobile-container {
+    padding: 80px 19px 40px 24px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+.mobile-contact{
+    margin-bottom: 48px;
+}
+.mobile-contact-icon {
+    display: flex;
+    justify-content: space-around;
+}
+
+.mobile-nav-list, .mobile-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.mobile-mail {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+}
+.modal {
+    min-width: 392px;
+}
+.modal-contant {
+    padding: 72px 16px 24px 16px;
+}
+}
+
+
+
 @media (max-width: 767px) and (min-device-pixel-ratio: 2),
 (max-width: 767px) and (min-resolution: 192dpi),
 (max-width: 767px) and (min-resolution: 2dppx) {

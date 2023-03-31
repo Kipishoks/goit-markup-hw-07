@@ -23,7 +23,7 @@
         <!--Навігація-->
         <a href="" class="link-logo  link">web<span class="nav-logo">studio</span></a>
         <nav class="nav center">
-            <button class="btn-mobile-menu btn" type="button">
+            <button class="btn-mobile-menu btn js-open-menu"  type="button">
                 <svg width="32" height="22">
                     <use href="./image/symboldefsopt.svg#icon-icon-menu"></use>
                 </svg>
@@ -40,7 +40,57 @@
             <li class="contact-list"><a href="tel:+110001111111" class="contact-link link">+11 (000) 111-11-11</a></li>
         </ul>
 </div>
+<div class="mobile-menu container js-menu-container" >
+    <button class="modal-close-btn  btn js-close-menu"  type="button">
+        <svg width="8" height="8">
+    <use href="./image/symboldefsopt.svg#icon-close" ></use>
+        </svg>
+    </button>
+    <div class="mobile-container ">
+<ul class="mobile-nav-list subtitle list">
+    <li class="mobile-nav-item"><a href="./index.html" class="mobile-nav-link link ">Studio</a></li>
+    <li class="mobile-nav-item"><a href="./portfolio.html" class="mobile-nav-link link">Portfolio</a></li>
+    <li class="mobile-nav-item"><a href="" class="mobile-nav-link link current" >Contacts</a></li>
+</ul>
+<div class="mobile-contact-container">
+<ul class="mobile-contact list ">
+    <li class="mobile-contact-list subtitle mobile-contact-list320 current"><a href="tel:+110001111111"
+            class="mobile-contact-link link">+11 (000) 111-11-11</a>
+    </li>
+    <li class="mobile-contact-list mobile-mail"><a href="mailto:info@devstudio.com"
+            class="mobile-contact-link link">info@devstudio.com</a></li>
+</ul>
+<ul class="mobile-contact-icon list">
+    <li class="team-contact-iteam link"> <a href="" class="link team-link">
+            <svg class="icon-contact" width="24" height="24">
+                <use href="./image/symboldefsopt.svg#icon-instagram"></use>
+            </svg>
+        </a>
+    </li>
+    <li class="team-contact-iteam link"> <a href="" class="link team-link">
+            <svg class="icon-contact" width="24" height="24">
+                <use href="./image/symboldefsopt.svg#icon-twitter"></use>
+            </svg>
+        </a>
+    </li>
+    <li class="team-contact-iteam link"> <a href="" class="link team-link">
+            <svg class="icon-contact" width="24" height="24">
+                <use href="./image/symboldefsopt.svg#icon-facebook"></use>
+            </svg>
+        </a>
+    </li>
+    <li class="team-contact-iteam link"> <a href="" class="link team-link">
+            <svg class="icon-contact" width="24" height="24">
+                <use href="./image/symboldefsopt.svg#icon-linkedin"></use>
+            </svg>
+        </a>
+    </li>
+</ul>
+</div>
 
+    </div>
+    
+</div>
     </header>
     <main>
         <!--Section Hero-->
@@ -163,8 +213,8 @@
                                         </svg>
                                     </a>
                                 </li>
-                            </ul>
-                                                  
+                            </ul>                       
+                    </div>
                     </div>
                 </li>
                 <li class="team-item">
@@ -276,10 +326,10 @@
         </div>
     </section>
 
-<!--------- customers --------------->
+<!-- customers --------------->
 
     <section class="customers section">
-        <div class="container">
+        <div class="container container-table">
             <h2 class="title">Customers</h2>
             <ul class="customers-list list">
                 <li class="customers-item"> <a class="customers-link link" href=""> <svg class="customers-icon" ><use href="./image/symboldefsopt.svg#icon-Logo1"></use>
@@ -298,9 +348,9 @@
         </div>
     </section>
     </main>
-    <!-----------------Footer---------------->
-    <footer class="footer hider">
-        <div class="container footer-container">
+    <!----Footer---------------->
+    <footer class="footer">
+        <div class="container footer-container container-table">
             <div class="footer-information">
                 <a class="footer-link" href="">web<span class="footer-logo">studio</span></a>
                 <p class="footer-text">Increase the flow of customers and sales for your business with digital marketing & growth
@@ -339,18 +389,21 @@
                 </li>
             </ul>
             </div>
-            <form >
-                <label for="input-mail" class="form-labal"><span class="form-title subtitle-footer">Subscribe</span></label>
-                <div class="form-foot">
-                    <input type="email" class="form-input" id="input-mail" name="mail" placeholder=" E-mail">
-                    <button type="submit" class="form-button btn">
-                        Subscribe <svg class="form-icon-send" width="24" height="20">
-                            <use href="./image/symboldefsopt.svg#icon-icon-send"></use>
-                        </svg></button>
+            <div class="form-div">
+<form>
+    <label for="input-mail" class="form-labal"><span class="form-title subtitle-footer">Subscribe</span></label>
+    <div class="form-foot">
+        <input type="email" class="form-input" id="input-mail" name="mail" placeholder=" E-mail">
+        <button type="submit" class="form-button btn">
+            Subscribe <svg class="form-icon-send" width="24" height="20">
+                <use href="./image/symboldefsopt.svg#icon-icon-send"></use>
+            </svg></button>
 
-                </div>
-                
-            </form>
+    </div>
+
+</form>
+            </div>
+            
         </div> 
     </footer>
     <div class="backdrop is-hidden" data-modal> 
@@ -402,5 +455,6 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
