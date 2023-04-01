@@ -94,11 +94,9 @@ a {text-decoration: none;
 
 .subtitle {
     
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
+ 
 }
 
 .subtitle-footer {
@@ -195,7 +193,6 @@ a {text-decoration: none;
 
   .slogan {
     text-align: center;
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
@@ -237,12 +234,13 @@ a {text-decoration: none;
    display: none;
  }
 
-.feature-subtitle {
-    font-weight: 700;
+.dark-subtitle {
+    /* font-weight: 700;
     font-size: 36px;
-    line-height: 1.11;
+    line-height: 1.11; */
     color: var(--dark);
     margin-bottom: 8px;
+    
 }
 
 .feature-text {
@@ -286,6 +284,9 @@ a {text-decoration: none;
   }
 
   .team-people {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
     color: var(--dark);
     text-align: center;
     margin-bottom: 8px;
@@ -528,11 +529,6 @@ ards-description {
     border: 1px solid var(--accent);
      }
 
-.cards-subtitle {
-    color: var(--dark);
-    margin-bottom: 8px;
-}
-
 .cards-link-overlay{
     position: relative;
     overflow: hidden;
@@ -584,8 +580,7 @@ ards-description {
     position: absolute;
     top: 50%;
     left: 50%;
-    /* translate: (-50%, -50%); */
-    min-width: 408px;
+    width: calc(100% - 32px);
     min-height: 576px;
     background-color: #FCFCFC;
     border-radius: 4px;
@@ -597,7 +592,6 @@ ards-description {
     position: absolute;
     top: 24px;
     right: 24px;
-    display: flex;
     justify-content: center;
     align-items: center;
     width: 24px;
