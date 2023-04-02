@@ -50,6 +50,9 @@ padding: 0;
     gap: 72px 16px;
     flex-wrap: wrap;
 }
+.team-item {
+    margin-bottom: 72px;
+}
 
 .footer-container {
     flex-direction: column;
@@ -89,8 +92,7 @@ padding: 0;
     visibility: hidden;
     pointer-events: none;
     transform: translateX(100%);
-    transition: transform var(--duration-time-function);
-    /* transition: opacity var(--duration-time-function), visibility var(--duration-time-function); */
+    transition: opacity var(--duration-time-function), visibility var(--duration-time-function);
 }
 
 .mobile-menu.is-open {
